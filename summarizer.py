@@ -62,7 +62,7 @@ def save_summary(summary_text):
     with open("summary.md", "w", encoding="utf-8") as f:
         f.write("# Key Points\n\n")
         f.write(summary_text.strip())
-    print("✅ Summary saved to summary.md")
+    print("Summary saved to summary.md")
 
 
 
@@ -73,10 +73,10 @@ def main():
         sys.exit(1)
 
     video_id = extract_video_id(sys.argv[1])
-    print(f"📺 Fetching transcript for video ID: {video_id}")
+    print(f"Fetching transcript for video ID: {video_id}")
     transcript = get_transcript(video_id)
 
-    print("🧠 Summarizing with BART (local)...")
+    print("Summarizing with BART (local)...")
     state = {"transcript": transcript}
     result = app.invoke(state)
     save_summary(result["summary"])
