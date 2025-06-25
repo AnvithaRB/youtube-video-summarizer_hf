@@ -1,0 +1,8 @@
+#`requirements.txt`
+
+```txt
+langchain>=0.1.17
+langgraph>=0.0.20
+transformers>=4.39.3
+torch>=2.1.0
+youtube-transcript-api>=0.6.2
