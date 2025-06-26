@@ -51,7 +51,7 @@ python summarizer.py https://youtu.be/eBz7iUJu9UM?si=gr-4wCFNHpRiTfpI
 
 The summary will be saved to a file called `summary.md`.
 
-# Tech Stack
+# Built With
 
 - Python
 - [LangChain](https://www.langchain.com/)
